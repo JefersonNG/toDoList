@@ -24,11 +24,7 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           port: 22
           script: |
-            set -e
-            if [ ! -d /caminho/absoluto/do/projeto/.git ]; then
-              git clone <url-do-repo> /caminho/absoluto/do/projeto
-            fi
-            cd /caminho/absoluto/do/projeto
+            cd /home/ubuntu/app
             git pull origin main
             docker compose down
             docker compose up -d --build
