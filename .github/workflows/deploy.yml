@@ -8,6 +8,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    environment: secrets
+
     steps:
       - name: 📥 Checkout
         uses: actions/checkout@v5
