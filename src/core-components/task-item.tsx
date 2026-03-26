@@ -6,7 +6,7 @@ import Text from "../components/text";
 import PencilIcon from "../assets/icons/PencilSimple-Regular.svg?react";
 import TrashIcon from "../assets/icons/Trash-Regular.svg?react";
 import XIcon from "../assets/icons/X-Regular.svg?react";
-import CheckIcon from "../assets/icons/check-regular.svg?react";
+import CheckIcon from "../assets/icons/Check-Regular.svg?react";
 import InputText from "../components/input-text";
 import { type Task } from "../models/task";
 import { cx } from "class-variance-authority";
