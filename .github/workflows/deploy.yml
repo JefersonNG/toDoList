@@ -24,7 +24,7 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           port: 22
           script: |
-            cd /home/ubuntu/app
+            cd /home/ubuntu/toDoList
             git pull origin main
             docker compose down
             docker compose up -d --build
