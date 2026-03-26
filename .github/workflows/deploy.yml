@@ -12,6 +12,15 @@ jobs:
       - name: 📥 Checkout
         uses: actions/checkout@v5
 
+      - name: 🔍 Debug secrets
+        run: |
+          echo "HOST está vazio? ${{ secrets.VPS_HOST == '' }}"
+          echo "USER está vazio? ${{ secrets.VPS_USER == '' }}"
+          echo "KEY está vazio? ${{ secrets.VPS_SSH_KEY == '' }}"
+          echo "Tamanho do HOST: ${#VPS_HOST}"
+        env:
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+
       - name: 🔑 Deploy via SSH
         uses: appleboy/ssh-action@master
         with:
