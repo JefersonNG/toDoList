@@ -1,4 +1,4 @@
-name: toDoList deploy ssh
+name: toDoList deploy
 
 on:
   push:
