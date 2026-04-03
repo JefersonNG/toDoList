@@ -1,4 +1,4 @@
-name: toDoList deploy
+name: toDoList deploy ssl
 
 on:
   push:
